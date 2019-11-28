@@ -1,0 +1,1180 @@
+@import "./common.css";
+
+body {
+    min-width: 1400px;
+}
+
+/* 输入框默认文本样式 */
+input::placeholder{
+    color: #ccc;
+}
+/* 完 */
+
+/* 页面宽度居中统一样式 */
+.container {
+    width: 980px;
+    margin: 40px auto;
+}
+/* 完 */
+
+/* 爱恨法则 */
+a:link {
+    color: #37a;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #37a;
+}
+
+a:hover{
+    background: #37a;
+    color: #fff; 
+}
+
+a:active{
+    background: #f93;
+    color: #fff;
+}
+/* 完 */
+
+/* 图片白边问题解决 */
+img{
+    display: block;
+    width: 100%;
+}
+/* 完 */
+
+/* 主要内容区通用样式 */
+
+/* 三栏目布局 */
+.area-left{
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+
+.area-right{
+    float: right;
+    width: 265px;
+    margin-left: 30px;
+}
+
+.content {
+    overflow: hidden;
+}
+/* 完 */
+
+li.pailie {
+    display: inline-block;
+}
+
+/* 二级标题样式 */
+h2.biaoti{
+    margin: 0 25px 12px 0;
+    width: 100px;
+    line-height: 150%;
+}
+
+h2.biaoti a {
+    color: rgb(73, 73, 73);
+    font-size: 24px;
+}
+h2.biaoti a:hover{
+    color: #fff;
+}
+/* 完 */
+
+
+/* 三级标题通用样式 */
+h3.h3{
+    margin: 0 0 12px 0;
+}
+
+h3.h3 .span01 {
+    color: #072;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+h3.h3 a:link,h3.h3 a:visited,h3.h3 a:hover,h3.h3 a:active{
+    background: none;
+}
+
+h3.h3 .span02{
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+
+h3.h3 .span02 a:hover,
+h3.h3 .span02 a:active{
+    background: #37a;
+}
+/* 完 */
+
+/* 区域、背景 */
+div.zhangjie:nth-child(even){
+    background: #f7f7f7;
+    width: 100%;
+}
+
+div.zhangjie{
+    overflow: hidden;
+}
+/* 完 */
+
+/* 完 */
+
+.dingwei{
+    position: relative;
+}
+
+/* 高度坍塌 */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/* 完 */
+
+/* 公共属性样式 */
+
+
+/* 页头区域 */
+
+header.container{
+    margin: 30px auto;
+}
+/* 页头logo */
+header .logo {
+    position: absolute;
+    top:0; 
+    left: 0;   
+}
+
+header .logo a {
+    display: block;
+    width: 155px;
+    height: 30px;
+    background: url(../images/logo_db.png) 0/100% no-repeat;
+}
+
+header .logo a span {
+    display: none;
+}
+
+/* logo结束 */
+
+/* 页头搜索栏 */
+header .submit{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    position: absolute;
+    top: 0;
+    left: 180px;
+}
+
+header .submit form .text input {
+    height: 20px;
+    width: 200px;
+    padding: 5px 60px 5px 5px;
+    font-size: 13px;
+}
+
+header .submit form .sousuo{
+    position: absolute;
+    right: 0;
+    top:0;
+    bottom: 0;
+}
+
+header .submit form .sousuo input {
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    color: transparent;
+    cursor: pointer;
+}
+
+header .submit form .sousuo input:focus{
+    border: 1px solid #ccc;
+    border-radius: 1px;
+}
+
+header .submit form .sousuo{
+    background: url(../images/sousuo.png) no-repeat 50% 50%/50% 50%;
+}
+/* 页头搜索框 */
+
+
+/* 导航栏样式 */
+
+header .nav {
+    margin-top: 6px;
+    height: 20px;
+    float: right;
+    overflow: hidden;
+}
+
+header .nav a {
+    display: inline-block;
+    width: 40px;
+    padding-top: 20px;
+    height: 0;
+    margin-right: 20px;
+    color: transparent;
+}
+header .nav a:last-child{
+    margin-right: 0;
+}
+
+header .nav a.dushu {
+    background: url(../images/anony_nav_logo.png) no-repeat top left;
+}
+
+header .nav a.dianyin {
+    background: url(../images/anony_nav_logo.png) no-repeat -60px 0;
+}
+
+header .nav a.yinyue {
+    background: url(../images/anony_nav_logo.png) no-repeat -120px 0;
+}
+
+header .nav a.xiaozu {
+    background: url(../images/anony_nav_logo.png) no-repeat -180px 0;
+}
+
+header .nav a.tongcheng {
+    background: url(../images/anony_nav_logo.png) no-repeat -240px 0;
+}
+
+header .nav a.FM {
+    background: url(../images/anony_nav_logo.png) no-repeat -300px 0;
+}
+
+header .nav a.shijian {
+    background: url(../images/anony_nav_logo.png) no-repeat -360px 0;
+}
+
+header .nav a.doupin {
+    background: url(../images/anony_nav_logo.png) no-repeat top right;
+}
+/* 导航栏目结束 */
+
+/* 页头结束 */
+
+
+/* 注册区域开始 */
+
+/* 背景图开始 */
+.banner { 
+    background-color:#edf4ed;
+}
+
+.banner .main {
+    margin: 0 auto;
+    height: 306px;
+    padding:0 200px;
+    background: url(../images/banner-bg.jpg) no-repeat 0px 0px/auto 100%;
+}
+/* 背景图结束 */
+
+
+/* 下载二维码区域开始 */
+
+.banner .main .download .anniu .xuanfu a{
+    color: #00B51D;
+}
+
+.banner .main .download{
+    position: absolute;
+    height: 120px;
+    left: 0;
+    top:0;
+    bottom: 0;
+    margin: auto 0;
+    margin-left:676px;
+}
+
+.banner .main .download p{
+    font-size: 25px;
+    color: #111;
+    height: 46px;
+    line-height: 46px;
+}
+
+.banner .main .download p span{
+    padding: 0 10px;
+}
+
+.banner .main .download .anniu{
+    height: 32px;
+    margin-top: 20px;
+}
+
+.banner .main .download .anniu .dianji {
+    padding: 10px 21px;
+    background-color: #00B51D;
+    border-radius: 2px;
+    color: white;
+    display:inline-block;
+    font-size: 12px;
+}
+
+.banner .main .download .anniu .xuanfu a{
+    font-size: 22px;
+    line-height: 22px;
+    text-align: center;
+}
+
+.banner .main .download .anniu .xuanfu {
+    float: right;
+    font-size: 23px;
+    border: 1px solid #00B51D;
+    border-radius: 2px;
+    padding: 4px;
+    color: #00B51D;
+    margin-left: 8px;
+    position: relative;
+}
+
+.banner .main .download .anniu .xuanfu .erweima{
+    position: absolute;
+    left: -2px;
+    top: -1px;
+    height: 226px;
+    width: 202px;
+    background: #fff;
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    text-align: center;
+    display: none;
+}
+
+.banner .main .download .anniu .xuanfu:hover .erweima{
+    display: block;  
+}
+
+.banner .main .download .anniu .xuanfu .erweima img{
+    padding: 21px 21px 5px 21px;
+    width: 160px;
+    height: 160px;
+}
+
+.banner .main .download .anniu .xuanfu .erweima p{
+    font-size: 13px;
+    color: #666;
+}
+/* 下载二维码结束 */
+
+
+/* 登陆区域开始 */
+.banner .main .denglu {
+    float:right;
+    height: 300px;
+    width: 300px;
+}
+/* 登陆区域结束 */
+
+
+/* 热点内容开始 */
+.tongyong {
+    font-size: 12px;
+    line-height: 1.62;
+    color: #999;
+}
+
+.redianneirong .content .left {
+    width: 380px;
+}
+
+.redianneirong .left .tupian-left {
+    width: 170px;
+    height: 205px;
+}
+
+.redianneirong .left .tupian-left img{
+    margin-bottom: 5px;
+}
+
+.redianneirong .left .tupian-left:nth-child(odd){
+    margin-right: 10px;
+}
+
+.redianneirong .content ul li {
+    margin-bottom: 16px;
+}
+
+.redianneirong .content ul .first p {
+    color: #666;
+}
+
+.redianneirong .area-right img{
+    width: 250px;
+    margin: 10px 0;
+}
+
+.redianneirong .area-right .remenhuati .right-xia {
+    margin-top: 13px;
+}
+
+.redianneirong .area-right .remenhuati .right-xia a{
+    font-size: 14px;
+}
+/* 热点内容结束 */
+
+
+/* 豆瓣时间开始 */
+.doubanshijian .content .main .pailie {
+    width: 100px;
+    text-align: center;
+    vertical-align: top;
+    margin-right: 67px;
+    margin-bottom: 15px;
+}
+.doubanshijian .content .main .pailie:nth-child(5n){
+    margin-right: 0;
+}
+
+.doubanshijian .content .main .pailie a{
+    color: #333333;
+}
+
+.doubanshijian .content .main .pailie a:hover{
+    color: #fff;
+}
+
+.doubanshijian .content .main .pailie div{
+    margin-top: 5px;
+}
+/* 豆瓣时间结束 */
+
+/* 豆瓣视频开始 */
+
+.zhangjie .shipin .content ul {
+    margin-bottom: 25px;
+}
+
+.zhangjie .shipin .content li.video {
+    width: 250px;
+    margin-right: 30px;
+}
+
+.zhangjie .shipin .content li.video p{
+    font-size: 13px;
+    margin-top: 11px;
+}
+
+
+.zhangjie .shipin .content li.video .dingwei a{
+    display: block;
+    width: 250px;
+    height: 140px;
+    background: url(./../images/dianying.jpg) no-repeat top left/100%;
+}
+
+.zhangjie .shipin .content li.video .dingwei a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background:linear-gradient(transparent,rgba(0,0,0,.25));
+}
+
+.zhangjie .shipin .content li.video .dingwei a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: transparent no-repeat center;
+    background-image: url(./../images/play.png);
+}
+/* 豆瓣视频结束 */
+
+/* 豆瓣电影明细 */
+.zhangjie .dianying .area-left ul li {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.zhangjie .dianying .area-left .biaoti a:link,
+.zhangjie .dianying .area-left .biaoti a:visited{
+    color: #27a;
+}
+
+.zhangjie .dianying .area-left .biaoti a:hover{
+    color:#fff;
+}
+
+.zhangjie .dianying .area-left ul li.new::after{
+    content: "";
+    vertical-align: top;
+    display: inline-block;
+    width: 16px;
+    height: 7px;
+    background:  url(./../images/new_menu.gif) #f93;
+    position: relative;
+    top:4px;
+    left: 4;
+}
+
+.zhangjie .dianying .area-right ul li.pailie {
+    margin: 4px 0 0 0;
+    width: 4em;
+}
+
+.zhangjie .dianying .area-right .liebiao01{
+    margin-bottom:30px;
+}
+
+.zhangjie .dianying .area-right .liebiao02 ol li{
+    list-style: decimal;
+    color: #111;
+    font-size: 12px;
+    list-style-position: inside;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eaeaea;
+    margin-top: 6px;
+}
+.zhangjie .dianying .area-right .liebiao02 ol li a {
+    margin-left: 5px;
+}
+
+.zhangjie .dianying .content ul{
+    margin-top: -40px;
+}
+
+.zhangjie .dianying .content ul li{
+    width: 100px;
+    padding:0 16px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.zhangjie .dianying .content ul .name a{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.zhangjie .dianying .content ul li .name a:link,
+.zhangjie .dianying .content ul li .name a:visited{
+    color: #111;
+}
+
+.zhangjie .dianying .content ul li .name a:hover,
+.zhangjie .dianying .content ul li .name a:active{
+    color: #fff;
+}
+
+.zhangjie .dianying .content ul li .name{
+    width: 100%;
+    margin:  15px 0 10px 0;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.zhangjie .dianying .content ul li .fen{
+    margin-bottom: 10px;
+}
+
+.zhangjie .dianying .content ul li a.piao{
+    display: blcok;
+    padding: 2px 10px;
+    background: #1c8bd0;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.zhangjie .dianying .content ul li a.piao:hover{
+    background: #047fcb;
+}
+
+.zhangjie .dianying .content ul li .xingji {
+    display: inline-block;
+    width: 55px;
+    height: 11px;
+    background-image: url(./../images/xingji.png);
+    background-repeat: no-repeat;
+}
+
+.fen .xingji.four{
+    background-position-y:-22px;
+}
+
+.fen .xingji.three{
+    background-position-y:-44px;
+}
+
+.fen .xingji.two{
+    background-position-y:-66px;
+}
+/* 豆瓣电影明细结束 */
+
+/* 豆瓣小组开始 */
+
+.zhangjie .doubanxiaozu .area-left ul li {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.zhangjie .doubanxiaozu .biaoti a:link,
+.zhangjie .doubanxiaozu .biaoti a:visited,
+.zhangjie .doubanxiaozu ul li a:link,
+.zhangjie .doubanxiaozu ul li a:visited{
+    color: #007982;
+}
+
+.zhangjie .doubanxiaozu .biaoti a:hover,
+.zhangjie .doubanxiaozu ul li a:hover{
+    color:#fff;
+}
+
+.zhangjie .doubanxiaozu .area-right .leimu {
+    margin-bottom: 10px;
+}
+
+.zhangjie .doubanxiaozu .area-right .leimu li{
+    margin-right: 5px;
+}
+
+h4.h4 a:link,
+h4.h4 a:visited{
+    color: #111;
+}
+
+h4.h4 a:hover,
+h4.h4 a:active{
+    color: #fff;
+}
+
+h4.h4 {
+    font-size: 14px;
+}
+
+.zhangjie .doubanxiaozu h3.h3 .span02 a{
+    color: #017a85;
+}
+
+.zhangjie .doubanxiaozu h3.h3 .span02 a:hover,
+.zhangjie .doubanxiaozu h3.h3 .span02 a:active{
+    color: #fff;
+}
+
+.zhangjie .doubanxiaozu .content .pailie {
+    width: 248px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    margin-right: 30px;
+    margin-bottom: 35px;
+}
+
+.zhangjie .doubanxiaozu .content .pailie .left{
+    margin-right: 17px;
+}
+
+.zhangjie .doubanxiaozu .content .pailie .content a {
+    font-size: 13px;
+}
+
+.zhangjie .doubanxiaozu .content .pailie .content div{
+    max-height: 3em;
+    overflow: hidden;
+    line-height: 1.45;
+}
+
+.zhangjie .doubanxiaozu .content .pailie .left img{
+    width: 48px;
+}
+/* 豆瓣小组结束 */
+
+/* 豆瓣读书开始 */
+
+.zhangjie .dushu .area-left ul li {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.zhangjie .dushu .biaoti a:link,
+.zhangjie .dushu .biaoti a:visited,
+.zhangjie .dushu ul li a:link,
+.zhangjie .dushu ul li a:visited{
+    color: #614e3c;
+}
+
+.zhangjie .dushu .biaoti a:hover,
+.zhangjie .dushu ul li a:hover{
+    color:#fff;
+}
+
+.zhangjie .dushu .area-left ul li.li-last{
+    margin-top: 30px;
+    font-size: 12px;
+}
+
+.zhangjie .dushu .area-left ul li.li-last i{
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(./../images/xuebi.jpg) no-repeat ;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+} 
+
+.zhangjie .dushu .area-right .leimu {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.zhangjie .dushu .area-right .leimu li{
+    margin-right: 5px;
+}
+
+
+.zhangjie .dushu h3.h3 .span02 a{
+    color: #614e3c;
+}
+
+.zhangjie .dushu h3.h3 .span02 a:hover,
+.zhangjie .dushu h3.h3 .span02 a:active{
+    color: #fff;
+}
+
+.zhangjie .dushu .content ul{
+    margin-top: -40px;
+}
+
+.zhangjie .dushu .content ul li{
+    width: 100px;
+    padding:0 16px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.zhangjie .dushu .content ul .name a{
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+.zhangjie .dushu .content ul li .name a:link,
+.zhangjie .dushu .content ul li .name a:visited{
+    color: #614e3c;
+}
+
+.zhangjie .dushu .content ul li .name a:hover,
+.zhangjie .dushu .content ul li .name a:active{
+    color: #fff;
+}
+
+.zhangjie .dushu .content ul li a.piao:link,
+.zhangjie .dushu .content ul li a.piao:visited{
+    background: #999a95;
+}
+
+.zhangjie .dushu .content ul li a.piao:hover{
+    background: #878882;
+}
+
+.zhangjie .dushu .content ul li .fen {
+    color: #111;
+    text-align: center;    
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+    margin-bottom: 5px;
+}
+
+.zhangjie .dushu .content ul li .name{
+    width: 100%;
+    margin:  8px 0 5px 0;
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+.zhangjie .dushu .content ul li a.piao{
+    display: blcok;
+    padding: 2px 10px;
+    background: #999a95;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.zhangjie .dushu .content h3.h3-two {
+    margin-top: 30px;
+}
+
+
+/* 豆瓣音乐 */
+
+.zhangjie .yingyue .area-left ul li {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+
+.zhangjie .yingyue ul li a:link,
+.zhangjie .yingyue ul li a:visited{
+    color: #555d53;
+}
+
+.zhangjie .yingyue .biaoti a:link,
+.zhangjie .yingyue .biaoti a:visited{
+    color: #f38c00;
+}
+
+.zhangjie .yingyue .biaoti a:hover,
+.zhangjie .yingyue ul li a:hover{
+    color:#fff;
+}
+
+.zhangjie .yingyue .area-left ul li.li-last{
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.zhangjie .yingyue .area-left ul li.li-last i{
+    display: block;
+    width: 48px;
+    height: 48px;
+    background: url(./../images/xuebi.jpg) no-repeat ;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.25);
+} 
+
+.zhangjie .yingyue .area-left ul li.li-last i.fm{
+    background-position:-250px;
+}
+
+.zhangjie .yingyue .area-left ul li.li-last i.yingyueren{
+    background-position: -50px;
+}
+
+.zhangjie .yingyue .content ul li .xingji {
+    display: inline-block;
+    width: 55px;
+    height: 11px;
+    background-image: url(./../images/xingji.png);
+    background-repeat: no-repeat;
+}
+
+.fen .xingji.four{
+    background-position-y:-22px;
+}
+
+.fen .xingji.three{
+    background-position-y:-44px;
+}
+
+.fen .xingji.two{
+    background-position-y:-66px;
+}
+
+
+.zhangjie .yingyue .content .diyi {
+    margin-bottom: 34px;
+}
+
+.zhangjie .yingyue h3.h3 .span02 a{
+    color: #555d53;
+}
+
+.zhangjie .yingyue h3.h3 .span02 a:hover,
+.zhangjie .yingyue h3.h3 .span02 a:active{
+    color: #fff;
+}
+
+.zhangjie .yingyue .content ul{
+    margin-top: -40px;
+    text-align: justify;
+}
+
+.zhangjie .yingyue .content ul li{
+    width: 24%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.zhangjie .yingyue .content ul li img{
+    width: 80px;
+    margin: 0 auto;
+}
+
+.zhangjie .yingyue .content ul .id a,
+.zhangjie .yingyue .content ul .name a{
+    display: inline-block;
+    
+}
+
+.zhangjie .yingyue .content ul .id{
+    margin:10px 0 4px 0;
+}
+
+.zhangjie .yingyue .content ul li .id a:link,
+.zhangjie .yingyue .content ul li .id a:visited,
+.zhangjie .yingyue .content ul li .name a:link,
+.zhangjie .yingyue .content ul li .name a:visited{
+    color: #555d53;
+}
+
+.zhangjie .yingyue .content ul li .id a:hover,
+.zhangjie .yingyue .content ul li .id a:active,
+.zhangjie .yingyue .content ul li .name a:hover,
+.zhangjie .yingyue .content ul li .name a:active{
+    color: #fff;
+}
+
+.zhangjie .yingyue .content ul li.pailie .music-img{
+    position: relative;
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+}
+
+.zhangjie .yingyue .content ul li.pailie .music-img i {
+    display: block;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(./../images/player.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.zhangjie .yingyue .content ul li.pailie .music-name {
+    color: #111;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.zhangjie .yingyue .area-right ol li {
+    list-style:decimal;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+.zhangjie .yingyue .area-right ol li .left{
+    width: 60px;
+    height: 48px;
+    position: relative;
+}
+
+.zhangjie .yingyue .area-right ol li .left img{
+    width: 48px;
+    height: 48px;    
+}
+
+.zhangjie .yingyue .area-right ol li .left a {
+    display: block;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.zhangjie .yingyue .area-right ol li .left a:hover{
+    background-color: rgba(0, 0, 0, .5);
+    background-image: url(./../images/ic_bg_play.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.zhangjie .yingyue .area-right ol li .content {
+    color: rgb(153, 153, 153);
+}
+
+.zhangjie .yingyue .area-right ol li .content .fuck{
+    margin-bottom: 5px;
+}
+
+.zhangjie .yingyue .area-right ol li .content a:link,
+.zhangjie .yingyue .area-right ol li .content a:visited{
+    color: rgb(85, 93, 83);
+}
+
+.zhangjie .yingyue .area-right ol li .content a:hover,
+.zhangjie .yingyue .area-right ol li .content a:active{
+    color: #fff;
+}
+
+/* 豆品开始 */
+
+.zhangjie .doupin .biaoti a:link,
+.zhangjie .doupin .biaoti a:visited{
+    color: #1f9432;
+}
+
+.zhangjie .doupin .biaoti a:hover,
+.zhangjie .doupin .biaoti a:active{
+    color:#fff;
+}
+
+.zhangjie .doupin .area-right .right-jia{
+    font-size: 14px;
+    display: block;
+    margin: 5px 0 30px 0;
+}
+
+.zhangjie .doupin .area-right .right-shoucang{
+    height: 95px;
+    width: 100%;
+    background-image: url(./../images/left-book.jpg);
+    background-size: 100%;
+    background-position: top left;
+}
+
+.zhangjie .doupin .area-right .right-shoucang:hover{
+    opacity: .7;
+}
+
+.zhangjie .doupin .content .shop {
+    text-align-last: justify;
+    width: 240px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+.zhangjie .doupin .content .shop span {
+    display: inline-block;
+}
+
+.zhangjie .doupin .content .shop .shop-img {
+    width: 240px;
+    height: 220px;
+    background-color: red;
+}
+
+.zhangjie .doupin .content .shop .shop-img.t01{
+    background-image: url(./../images/tea01.jpg);
+    background-repeat: no-repeat;
+}
+
+.zhangjie .doupin .content .shop .shop-img.t02{
+    background-image: url(./../images/tea01.jpg);
+    background-repeat: no-repeat;
+}
+
+.zhangjie .doupin .content .shop .shop-img.t03{
+    background-image: url(./../images/tea01.jpg);
+    background-repeat: no-repeat;
+}
+
+.zhangjie .doupin .content .shop .shop-img.t04{
+    background-image: url(./../images/tea01.jpg);
+    background-repeat: no-repeat;
+}
+
+.zhangjie .doupin .content .shop .shop-img:hover{
+    opacity: 0.7;
+}
+
+.zhangjie .doupin .content .shop span {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.money {
+    color: rgb(229, 84, 87);
+}
+/* 豆品结束 */
+
+/* 同城开始 */
+
+.zhangjie .tongcheng .area-left .biaoti a{
+    color: #ec5303;
+}
+
+.zhangjie .tongcheng .area-left .biaoti a:hover{
+    color: #fff;
+}
+
+.zhangjie .tongcheng .area-left ul li {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.zhangjie .tongcheng a {
+    color: #643;
+}
+
+.zhangjie .tongcheng a:hover{
+    color: #fff;
+}
+
+.zhangjie .tongcheng .area-right h4.h4 a{
+    color: #643;
+}
+
+.zhangjie .tongcheng .area-right h4.h4 a:hover{
+    color: #fff;
+}
+
+.zhangjie .tongcheng .area-right ul li.pailie {
+    margin-right: 10px;
+}
+
+.zhangjie .tongcheng .area-right .leimu {
+    margin-top: 10px;
+}
+
+.zhangjie .tongcheng .content .pailie{
+    width: 248px;
+    margin:0 20px  40px 0; 
+}
+
+.zhangjie .tongcheng .content .pailie .left {
+    margin-right: 15px;
+}
+
+.zhangjie .tongcheng .content .pailie .dizhi {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow:ellipsis;
+}
+
+/* 同城结束 */
+
+/* 页脚开始 */
+
+footer.footer .area-left {
+    width: auto;
+}
+
+footer.footer .area-left img{
+    display: initial;
+    width: initial;
+    height: 12px;
+}
+
+footer.footer {
+    padding: 14px;
+    border-top: 1px dashed #dcdcdc;
+}
+
+footer.footer .area-right {
+    width: auto;
+} 
+
+footer.footer .area-right ul li {
+    list-style: initial;
+    margin-right: 7px;
+}
+
+footer.footer .area-right img{
+    width: initial;
+    margin-top: 22px;
+}

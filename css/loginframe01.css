@@ -1,0 +1,163 @@
+@import "./common.css";
+
+/* 统一设置 */
+
+a {
+    color: #41ac52;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    border: 1px solid #e4e4e5;
+    border-radius: 3px;
+    padding-left: 10px;
+    height: 34px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+
+/* 等多的缩进 */
+
+input[type="text"].more-text-indent {
+    padding-left: 60px;
+}
+
+/* 统一设置结束 */
+
+.container {
+    width: 300px;
+    height: 300px;
+    line-height: 2;
+    padding: 30px 10px 10px;
+}
+
+.container .login .switch-menu{
+    border-bottom: 1px solid #ececec;
+    font-size: 13px;
+}
+
+.container .login .switch-menu span{
+    width: 150px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.login {
+    color: #9b9b9b;
+}
+
+.container .login .switch-menu span.selectde {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: -1px;
+    border-bottom:2px solid #494949;
+}
+
+.container .login .form-item {
+    margin: 10px 0;
+    position: relative;    
+}
+
+.container .login .form-item .text {
+    font-size: 12px;
+}
+
+.container .login .form-item .country-code {
+    position: absolute;
+    width: 51px;
+    height: 26px;
+    text-align: center;
+    top: 0;
+    left: 0;
+    margin: 4px 0px;
+    color: #333;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 26px;
+    cursor: pointer;
+    border-right: 1px solid #9b9b9b;
+}
+
+.container .login .form-item .country-code .choose-area {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,.7);
+    top: 0;
+    left: 0;
+    z-index: 1;
+    cursor: auto;
+}
+
+.container .login .form-item .country-code .choose-area .center{
+    width: 225px;
+    height: 285px;
+    position: absolute;
+    box-sizing: border-box;
+    border: 1px solid #bbb;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 3px;
+    cursor: auto;
+    overflow: hidden;
+}
+
+.container .login .form-item .country-code .choose-area .center .title {
+    background: #ebf5eb;
+    color: #333;
+    height: 42px;
+    line-height: 42px;
+    text-align: left;
+    padding: 0px 0px 0px 10px;
+    box-sizing: border-box;
+    color: #41ac52;
+    font-weight: bold;
+}
+
+.container .login .form-item .country-code .choose-area .center ul {
+    height: 242px;
+    width: 100%;
+    overflow: auto;
+    padding: 10px 10px;
+    box-sizing: border-box;
+}
+
+.container .login .form-item .country-code .choose-area .center ul li {
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    margin-top:-1px; 
+    font-size: 14px;
+}
+
+.container .login .form-item .country-code .choose-area .center ul li .right {
+    color: #9b9b9b;
+    font-weight: normal;
+}
+
+.container .login .form-item .country-code .choose-area .center ul li.selectde{
+    color: #41ac52;
+    cursor: pointer;
+}
+
+.container .login .form-item .country-code .choose-area .center ul li.selectde::after{
+    content: "√";
+    display: inline;
+    width: 30px;
+    text-align: left;
+    margin-right: 83px;
+}
+
+.container .login .form-item .country-code .choose-area .center ul li.selectde .right{
+    color: inherit;
+}
+
+.guanbi {
+    display:none;
+}
+

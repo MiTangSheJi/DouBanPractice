@@ -1,0 +1,399 @@
+@import "./common.css";
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.jueduidingwei {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+body{
+  color: #9b9b9b;
+  font-size: 13px;
+}
+
+.hidden{
+  display: none;
+}
+
+a {
+  color: #41ac52;
+}
+
+/* 通用代码 */
+
+.denglu {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  padding: 32px 11px 12px 11px;
+  margin: 0 auto;
+}
+
+/* 切换界面开始 */
+
+.denglu .qiehuan01 ul,
+.denglu .qiehuan03 p {
+  height: 13px;
+  font-size: 13px;
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+  margin-bottom: 15px;
+  color: rgb(146, 146, 146);
+}
+
+.denglu ul li.left,
+.denglu ul li.right{
+  width: 138px;
+  cursor: pointer;
+}
+
+/* 切换开关 */
+
+.denglu ul li.right.app-off,
+.denglu ul li.left.app-off {
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  color: black;
+}
+
+
+/* 切换开关 */
+
+/* 切换界面结束 */
+
+
+
+/* 手机登陆界面开始 */
+
+.yinsi {
+  color: #9b9b9b;
+  font-size: 12px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.input {
+  font-size: 13px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+}
+
+.denglu .one form .phone input {
+  padding: 8px 40px 8px 60px;
+}
+
+.denglu form .phone,
+.denglu form .mima {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+  margin-bottom: 11px;
+  overflow: hidden;
+}
+
+.denglu .shuru01 form .phone .guojia {
+  height: 16px;
+  position: absolute;
+  left: 6px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  font-weight: bold;
+  color: #333;
+  padding: 3px 9px 3px 0px;
+  border-right: 1px solid #ccc;
+}
+
+.denglu .shuru01 .mima .yanzhenma {
+  font-size: 15px;
+  height: 15px;
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.anniu {
+  width: 100%;
+  height: 34px;
+  background-color: #41ac52;
+  font-size: 15px;
+  color: white;
+  margin-bottom: 13px;
+}
+
+.anniu.kai{
+  background: #41ac5270;
+  pointer-events:none;
+  cursor: not-allowed;
+}
+
+
+/* 手机登陆界面结束 */
+
+/* 按钮下部开始 */
+
+.denglu .bottom {
+  position: relative;
+  margin-bottom: 16px;
+  color: #333;
+}
+
+.denglu .bottom .yanzhenma {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 13px;
+  margin: auto 0;
+}
+/* 按钮下部结束 */
+
+/* 第三方接口开始 */
+
+.denglu .disanfang {
+  width: 236px;
+  height: 30px;
+  font-size: 13px;
+  color: #9b9b9b;
+  border-top: 1px solid #9b9b9b;
+  position: relative;
+  line-height: 30px;
+}
+
+.denglu .disanfang .changshang {
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 72px;
+}
+.denglu .disanfang .changshang a {
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+.icon-weixin {
+  color: #41ac52;
+}
+
+.icon-weibo {
+  color: red;
+}
+
+/* 第三节接口结束 */
+
+
+
+/* 账号登录界面开始 */
+
+.denglu .two .yinsi {
+  text-align: right;
+}
+
+/* 账号登陆界面结束 */
+
+/* 扫码登录开始 */
+
+.denglu .erweimadenglu {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.denglu .erweimadenglu .erweima,
+.denglu .erweimadenglu .zhanghao {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.denglu .erweimadenglu a {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.erweima a {
+  background: url(./../images/下载.png) no-repeat top right/100%;
+}
+
+.zhanghao a {
+  background: url(./../images/下载02.png) no-repeat top right/100%;
+}
+
+span#saoma,
+span#zhenchang {
+  display: block;
+  width: 55px;
+  height: 16px;
+  padding: 5px;
+  position: absolute;
+  right: 37px;
+  top: 9px;
+  font-size: 12px;
+  background: #f5faf9;
+  border: 1px solid rgba(66, 189, 86, 0.3);
+  border-radius: 2px;
+  text-align: center;
+  line-height: 16px;
+}
+
+span#saoma::after,
+span#zhenchang::after {
+  content: "";
+  background: #f5faf9;
+  padding: 6px;
+  height: 0;
+  border-top: 1px solid rgba(66, 189, 86, 0.3);
+  border-right: 1px solid rgba(66, 189, 86, 0.3);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -7px;
+  margin: auto 0;
+}
+
+.denglu .shouji img {
+  width: 163px;
+  height: 163px;
+  margin: 0px 60px 10px 60px;
+}
+
+.denglu .shouji .kehuduan {
+  width: 160px;
+  height: 12px;
+  margin: 0 auto;
+  padding: 7px 21px;
+  font-size: 13px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 15px;
+}
+
+.denglu .shouji .qiehuan03 p {
+  text-align: left;
+  color: #333;
+  font-weight: bold;
+}
+
+/* 扫码登陆结束 */
+
+/* 国家区号选择 */
+.denglu .quyu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 1;
+}
+
+.denglu .quyu .quhao {
+  position: fixed;
+  height: 225px;
+  width: 285px;
+  box-sizing: border-box;
+  margin: auto;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.denglu .quyu .quhao h2 {
+  box-sizing: border-box;
+  height: 42px;
+  padding: 10px 10px 6px;
+  background: #ebf5eb;
+  color: #060;
+  font-size: 1.17em;
+  font-weight: bold;
+  line-height: 1.17em;
+  position: relative;
+}
+
+.denglu .quyu .quhao h2 a {
+  position: absolute;
+  right: 16px;
+  top: 9px;
+  color: #9b9b9b;
+  font-size: 12px;
+}
+
+.denglu .quyu .quhao ul{
+    height: auto;
+    max-height: 150px;
+    overflow: auto;
+    padding: 15px;
+}
+
+.denglu .quyu .quhao ul li{
+    text-align: justify;
+    overflow: hidden;
+    font-size: 0;
+    border-top: 1px solid #ccc;
+}
+
+.denglu .quyu .quhao ul li:last-child{
+  border-bottom: 1px solid #ccc;
+}
+
+.denglu .quyu .quhao ul li::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.denglu .quyu .quhao ul li span{
+    height: 38px;
+    display: inline-block;
+    line-height: 38px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.denglu .quyu .quhao ul li .wenzi{
+  color: #494949;
+  font-weight: bold;
+}
+
+.denglu .quyu .quhao ul li .shuzi {
+  color:#aaa;
+}
+
+/* 选中开关 */
+
+.denglu .quyu .quhao ul li .xuanzhong {
+  color: #41ac52;
+  
+}
+
+.denglu .quyu .quhao ul li .duihao::after{
+  content: "√";
+  margin-left: 10px;
+}
